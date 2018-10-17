@@ -3,11 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>js_basic</title>
+  <title>task_2</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-
+  <section id="calc">
+    <div class="contr">
+      <input type="text" name="first" class="number">
+      <div id="operation">
+        <div>
+          <input type="radio" name="operation" value="+" id="sum">
+          <label for="sum">+</label><br>
+        </div>
+        <div>
+          <input type="radio" name="operation" value="-" id="sub">
+          <label for="sub">&#8211;</label>
+        </div>
+        <div>
+          <input type="radio" name="operation" value="*" id="mult">
+          <label for="mult">&#215;</label>
+        </div>
+        <div>
+          <input type="radio" name="operation" value="/" id="div">
+          <label for="div">&#247;</label>
+        </div>
+      </div>
+      <input type="text" name="second" class="number">
+      <span>=</span>
+      <button name="result">result</button>
+    </div>
+    <div class="result">
+      <span>RESULT:</span>
+      <div></div>
+    </div>
+  </section>
 </body>
 
 </html>

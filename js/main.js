@@ -77,6 +77,4 @@ CONTR.addEventListener("click", function (e) {
       DISP.innerHTML = "0";
     }
   }
-
-
 })

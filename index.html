@@ -3,11 +3,73 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>js_basic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .container {
+      height: calc(100vh - 10px);
+      border: 1px solid;
+      border-radius: 5em;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .row {
+      height: 100%;
+    }
+
+    .row div {
+      height: 100%;
+    }
+
+    .row div:nth-of-type(2) {
+      border-left: solid 1px;
+      border-right: solid 1px;
+    }
+
+    @media (min-width: 768px) and (max-width:992px) {
+      .row {
+        height: 50%;
+      }
+
+      .row div:nth-of-type(2) {
+        border-right: none;
+      }
+
+      .row div:last-of-type {
+        border-top: solid 1px;
+      }
+    }
+
+    @media (max-width:768px) {
+      .row {
+        height: calc(100% / 3);
+      }
+
+      .row div:nth-of-type(2) {
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        border-left: none;
+        border-right: none;
+      }
+
+      .row div:last-of-type {
+        border-top: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"></div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+    </div>
+  </div>
 </body>
 
 </html>

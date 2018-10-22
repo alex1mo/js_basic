@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>task4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TASK4</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active" data="task1"><a href="#">task1</a></li>
+          <li data="task2"><a href="#">task2</a></li>
+          <li data="task3"><a href="#">task3</a></li>
+          <li data="task4"><a href="#">task4</a></li>
+          <li data="task5"><a href="#">task5</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">style<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li active="yes" data="style1"><a href="#">style1</a></li>
+              <li active="no" data="style2"><a href="#">style2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </header>
+  <section class="container" id="tasks">
+    <div class="row active" data="task1">
+
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <span>Задача 1:</span>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 text-justify">
+        <p>
+          Напишите программу, которая проверяет поддержку localStorage в браузере. Результат проверки выведите в
+          консоль.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row" data="task2">
+
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <span>Задача 2:</span>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 text-justify">
+        <p>
+          Создайте HTML страницу и два варианта оформления, которые размещены в разных css файлах. На странице
+          сделайте переключатель тем оформления. При выборе оформления – происходит подключение соответствующего файла
+          CSS. Запишите в localStorage выбранную тему оформления. При обновлении страницы загружайте ранее выбранную
+          тему.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row" data="task3">
+
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <span>Задача 3:</span>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 text-justify">
+        <p>
+          Создайте массив, сохраните его в localStorage. Считайте массив из localStorage, выведите его на экран.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row" data="task4">
+
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <span>Задача 4:</span>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 text-justify">
+        <p>
+          Создайте окно, которое всплывает через 4 секунды после загрузки страницы. В окне – опция «Согласен». Если
+          пользователь выбирает данную опцию и закрывает окно – то при последующих обновлениях окно не показывается.
+          Если пользователь не выбрал опцию «Согласен», то повторяйте вывод окна после загрузки.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row" data="task5">
+
+      <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
+        <span>Задача 5:</span>
+      </div>
+      <div class="col-xs-9 col-sm-9 col-md-10 col-lg-10 text-justify">
+        <p>
+          Напишите скрипт, который выводит все содержимое localStorage.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">здесь будет выводится массив</h4>
+        </div>
+        <div class="modal-body">
+          <span>массив</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Согласен</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

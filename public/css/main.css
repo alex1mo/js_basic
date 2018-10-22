@@ -1,0 +1,12 @@
+.dropdown-menu>[active="yes"] a {
+  font-weight: bold;
+}
+
+
+#tasks>div:not(.active) {
+  display: none;
+}
+
+#modal {
+  display: none;
+}

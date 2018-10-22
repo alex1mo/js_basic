@@ -1,0 +1,43 @@
+.navbar-default {
+  background-color: #aaa9a9;
+  border-color: #807f7f;
+}
+
+body {
+  background: #b6b6b6;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #555;
+  background-color: #c0bebe;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #555;
+  background-color: #c0bebe;
+}
+
+.dropdown-menu {
+  background-color: #c0bebe;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #aaa9a9;
+}
+
+#modal .modal-content {
+  background-color: #aaa9a9;
+  border-color: #807f7f;
+}
+
+#modal .btn-default {
+  background-color: #c0bebe;
+}
+
+#modal .btn-default:hover {
+  background-color: #777777;
+}
